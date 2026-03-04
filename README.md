@@ -125,10 +125,10 @@ When you build the mod, you get two files in `build/libs/`:
 
 | File | What it is | Who needs it |
 |---|---|---|
-| `thanos-gauntlet-fps-1.0.0.jar` | The actual mod | **Everyone** — this is what goes in the mods folder |
-| `thanos-gauntlet-fps-1.0.0-sources.jar` | The mod's source code | Developers only — skip this if you just want to play |
+| `thanos-gauntlet-fps-1.0.1.jar` | The actual mod | **Everyone** — this is what goes in the mods folder |
+| `thanos-gauntlet-fps-1.0.1-sources.jar` | The mod's source code | Developers only — skip this if you just want to play |
 
-**For Modrinth:** Upload only `thanos-gauntlet-fps-1.0.0.jar`
+**For Modrinth:** Upload only `thanos-gauntlet-fps-1.0.1.jar`
 
 **For GitHub:** You can upload both as release assets. The source code itself is already on GitHub, so the sources jar is optional.
 
