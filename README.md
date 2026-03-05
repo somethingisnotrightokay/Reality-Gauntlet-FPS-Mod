@@ -1,4 +1,4 @@
-# 🟣 Thanos Gauntlet FPS
+# 🟣 Thanos Gauntlet FPS v3
 ### *Six Stones. One Snap. Infinite FPS.*
 
 [![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-brightgreen)](https://minecraft.net/)
@@ -7,17 +7,15 @@
 [![Modrinth](https://img.shields.io/badge/Modrinth-Available-green)](https://modrinth.com/mod/thanos-gauntlet-fps)
 [![GitHub](https://img.shields.io/badge/GitHub-Source-black)](https://github.com/thanosmod/thanos-gauntlet-fps)
 
-> *The ultimate Fabric performance optimizer. Auto-tunes FPS, entities, chunks, redstone, and shaders. Works alongside Sodium + Iris for the smoothest Minecraft experience.*
+> *The ultimate Fabric performance optimizer. Fully audited and bug-fixed. Auto-tunes FPS, entities, chunks, redstone, and shaders. Works alongside Sodium + Iris for the smoothest Minecraft experience.*
 
 ---
 
 ## 🎮 What Does This Mod Do?
 
-If Minecraft runs slowly on your computer, this mod fixes that — automatically.
+If Minecraft runs slowly on your computer, this mod fixes that automatically.
 
-When you load a world, it reads your computer's specs (CPU, RAM, graphics card), figures out what settings your PC can handle, and applies them for you. It also watches your FPS while you play and quietly adjusts things in the background to keep the game smooth — no restarts needed.
-
-Think of it like having a smart assistant that constantly tweaks Minecraft's settings so you get the best performance possible without having to touch anything yourself.
+It reads your computer's specs (CPU, RAM, GPU), applies optimal settings, monitors FPS live, and adjusts settings in real-time — no restarts needed. Think of it as a smart assistant that constantly tweaks Minecraft so you get the smoothest performance without touching a thing.
 
 ---
 
@@ -25,126 +23,97 @@ Think of it like having a smart assistant that constantly tweaks Minecraft's set
 
 | Minecraft Version | Supported |
 |---|---|
-| **1.21.1** | ✅ Yes — this is the target version |
-| 1.21.2 / 1.21.3 / 1.21.4 | ⚠️ May work but not tested |
+| **1.21.1** | ✅ Yes — v3 target version |
+| 1.21.2 / 1.21.3 / 1.21.4 | ⚠️ May work but untested |
 | 1.20.x and below | ❌ No |
 | Forge / NeoForge | ❌ No — Fabric only |
 
-> **This mod requires Fabric, not Forge.** If you use the Fabric launcher, you're good. If you use Forge, this mod won't work.
+> **Requires Fabric, not Forge.**
 
 ---
 
 ## ⬡ The Six Infinity Stones (Features)
 
-Each feature is named after an Infinity Stone. Here's what each one actually does in plain English:
-
-| Stone | What it does for you |
+| Stone | Feature |
 |---|---|
-| 🔴 **Reality Stone** | Controls how far away you can see. Automatically lowers this if your PC is struggling. |
-| 🟣 **Power Stone** | Stops mobs that are far away from doing complex AI calculations. You won't notice — they'll still move, just less frantically when they're not near you. |
-| 🔵 **Space Stone** | Cleans up memory while you play, so the game doesn't get slower the longer you're in a world. |
-| 🟢 **Time Stone** | Skips redstone and particle effects that are too far away for you to see anyway. Big redstone farms won't eat your FPS anymore. |
-| 🟡 **Mind Stone** | The brain of the mod. Reads your hardware, watches your FPS every 5 seconds, and adjusts everything automatically. |
-| 🟠 **Soul Stone** | Adds a small FPS counter to your screen and flashes a warning if your game drops too low. |
-| ⚪ **Chaos Stone** | Optional debug info, a "Dream Mode" that removes all particles for maximum performance, and a hotkey to switch modes on the fly. |
+| 🔴 **Reality Stone** | Auto-adjusts render distance based on hardware and FPS |
+| 🟣 **Power Stone** | Skips AI updates for distant mobs for smoother performance |
+| 🔵 **Space Stone** | Cleans memory dynamically to prevent slowdowns |
+| 🟢 **Time Stone** | Skips faraway redstone and particles, improving FPS |
+| 🟡 **Mind Stone** | Auto-tunes settings live based on FPS and hardware detection |
+| 🟠 **Soul Stone** | HUD overlay with FPS and warning system for drops |
+| ⚪ **Chaos Stone** | Optional debug tools and “Dream Mode” for max FPS |
 
 ---
 
-## 🚀 Installation (Step by Step)
+## 🚀 Installation
 
 **Required:**
-1. Install [Fabric Loader for Minecraft 1.21.1](https://fabricmc.net/use/installer/)
-2. Download and put [Fabric API](https://modrinth.com/mod/fabric-api) in your `mods` folder
-3. Download `thanos-gauntlet-fps-1.0.0.jar` from [Modrinth](https://modrinth.com/mod/thanos-gauntlet-fps) and put it in your `mods` folder
-4. Launch Minecraft with the Fabric profile — done!
+1. [Install Fabric Loader 0.15.11+ for MC 1.21.1](https://fabricmc.net/use/installer/)
+2. Place [Fabric API](https://modrinth.com/mod/fabric-api) in your `mods` folder
+3. Place `thanos-gauntlet-fps-3.0.0.jar` in `mods`
+4. Launch Minecraft with Fabric profile
 
-**Optional but recommended:**
-- [Sodium](https://modrinth.com/mod/sodium) — makes rendering much faster (the mod detects it and adjusts automatically)
-- [Iris](https://modrinth.com/mod/iris) — shader support (the mod detects active shaders and reduces heavy settings to compensate)
-- [Cloth Config](https://modrinth.com/mod/cloth-config) — needed for the in-game settings screen
-- [ModMenu](https://modrinth.com/mod/modmenu) — adds a "Mods" button to the main menu so you can open settings easily
+**Optional:**
+- [Sodium](https://modrinth.com/mod/sodium) — boosts rendering performance
+- [Iris](https://modrinth.com/mod/iris) — shader support
+- [Cloth Config](https://modrinth.com/mod/cloth-config) — for in-game settings
+- [ModMenu](https://modrinth.com/mod/modmenu) — access settings easily via Mods menu
 
-> **Where is my mods folder?**
-> Press `Win + R`, type `%appdata%\.minecraft\mods` and hit Enter.
+> Mods folder: `%appdata%\.minecraft\mods`
 
 ---
 
 ## ⚙️ Settings & Configuration
 
-### Easy way — In-game settings screen
-If you have Cloth Config + ModMenu installed:
-1. Click **Mods** on the main menu
-2. Find **Thanos Gauntlet FPS**
-3. Click the settings icon
+**In-game GUI (recommended)**:  
+Via ModMenu + Cloth Config: sliders & toggles for each Stone.
 
-You'll see seven tabs (one per Stone) with sliders and toggles.
+**Manual config file:**  
 
-### Manual way — Config file
-The mod creates a config file at:
-```
 .minecraft/config/thanos-gauntlet-fps.json
-```
-You can open it in any text editor (like Notepad) and change values manually.
 
 ---
 
 ## 🎮 Performance Modes
 
-Press **K** in-game to cycle through modes, or change it in the settings screen.
+Press **K** to cycle modes or use settings screen:
 
-| Mode | Best for | What gets changed |
+| Mode | Best for | Effect |
 |---|---|---|
-| 🔴 **Low-End** | Old/slow PCs, laptops | Render distance 6, particles 30%, mobs stop AI-ing at 16 blocks away |
-| 🟡 **Balanced** | Most players | Render distance 10, particles 70%, mobs stop AI-ing at 32 blocks away |
-| 🟢 **Ultra** | High-end PCs | Render distance 16, full particles, almost no restrictions |
-| ⚙️ **Custom** | Power users | You control everything manually |
+| 🔴 **Low-End** | Old/slow PCs | Render distance 6, particles 30%, mobs stop AI >16 blocks |
+| 🟡 **Balanced** | Most PCs | Render distance 10, particles 70%, mobs stop AI >32 blocks |
+| 🟢 **Ultra** | High-end PCs | Render distance 16, full particles, minimal restrictions |
+| ⚙️ **Custom** | Power users | Manual control of all settings |
 
-The mod will also **auto-switch** between these behind the scenes based on your live FPS — you don't have to do it manually.
-
----
-
-## ❓ Frequently Asked Questions
-
-**Does this work with Optifine?**
-No. Optifine is not compatible with Fabric. Use Sodium + Iris instead — they're better anyway.
-
-**Will this break my redstone farms?**
-Only redstone that's very far away from any player gets skipped. If you're standing near your farm, it runs normally. You can also turn this feature off in settings.
-
-**Does this work on servers?**
-Yes. The server-side optimisations (entity AI, redstone skipping) work on any server running this mod. The client-side features (HUD, particles) work in singleplayer and on any server.
-
-**Is the sources JAR on GitHub necessary?**
-No. The `-sources.jar` file is for developers who want to read the mod's code from inside their IDE. Normal players only need the regular `.jar` file.
+Auto-switching applies live adjustments based on FPS.
 
 ---
 
-## 📦 Files Explained (For GitHub / Modrinth)
+## ❓ FAQ
 
-When you build the mod, you get two files in `build/libs/`:
-
-| File | What it is | Who needs it |
-|---|---|---|
-| `thanos-gauntlet-fps-1.0.1.jar` | The actual mod | **Everyone** — this is what goes in the mods folder |
-| `thanos-gauntlet-fps-1.0.1-sources.jar` | The mod's source code | Developers only — skip this if you just want to play |
-
-**For Modrinth:** Upload only `thanos-gauntlet-fps-1.0.1.jar`
-
-**For GitHub:** You can upload both as release assets. The source code itself is already on GitHub, so the sources jar is optional.
+**Optifine compatibility?** ❌ Not supported — use Sodium + Iris  
+**Redstone farms affected?** ❌ Only distant redstone skipped  
+**Server compatibility?** ✅ Client-side works anywhere; server-side optimizations active on any server  
+**Sources jar needed?** ❌ Only for developers
 
 ---
 
-## 🛠️ Building from Source (For Developers)
+## 📦 Files
 
-Want to contribute or modify the mod? Here's how to build it yourself.
+| File | Purpose |
+|---|---|
+| `thanos-gauntlet-fps-3.0.0.jar` | Mod for everyone — drop in `mods` |
+| `thanos-gauntlet-fps-3.0.0-sources.jar` | Source code — developers only |
 
-**Requirements:**
-- Java 21 ([download here](https://adoptium.net/))
-- The source code (clone or download from GitHub)
+---
 
-**Steps:**
+## 🛠️ Building from Source
+
+**Requirements:** Java 21 + Gradle
+
 ```bash
-git clone https://github.com/thanosmod/Thanos Gauntlet Fps Mod Unbuilt(v2).zip
+git clone https://github.com/thanosmod/thanos-gauntlet-fps.git
 cd thanos-gauntlet-fps
 
 # Windows
@@ -152,92 +121,84 @@ gradlew.bat build
 
 # Mac / Linux
 ./gradlew build
-```
 
-The built jar will appear at `build/libs/thanos-gauntlet-fps-1.0.0.jar`.
+Built jar: build/libs/thanos-gauntlet-fps-3.0.0.jar
+Run directly in IDE: Gradle task runClient
 
-**To test in Minecraft directly from VS Code:**
-Run the Gradle task `Tasks → fabric → runClient` — this launches Minecraft with the mod loaded automatically, no copying needed.
-
----
-
-## 🔬 How the Auto-Tune Works (Technical)
-
-```
+🔬 Auto-Tune Logic
 On world load:
-  1. Read CPU cores, RAM, GPU name → classify hardware as LOW / MID / HIGH
-  2. Detect if Sodium and/or Iris are installed
-  3. If Iris shaders are active → reduce render distance by 2, particles by 30%
-  4. Apply the hardware-appropriate preset (Low-End / Balanced / Ultra)
+  - Detect CPU, RAM, GPU → classify LOW / MID / HIGH
+  - Detect Sodium / Iris → apply shader budget
+  - Apply preset (Low / Balanced / Ultra)
 
-Every 5 seconds while playing:
-  5. Sample current FPS (rolling average of last 5 readings)
-  6. If FPS drops below 80% of target → cut one setting:
-       first particles, then entity AI distance, then render distance
-  7. If FPS is above 120% of target → restore one setting (reverse order)
-  8. Save changes to config file
-```
+Every 5 seconds:
+  - Sample FPS
+  - If FPS < 80% target → reduce particles → AI → render distance
+  - If FPS > 120% target → restore settings
+  - Save to config
 
----
 
-## 🤝 Mod Compatibility
+🤝 Mod Compatibility
 
-| Mod | Works with? |
-|---|---|
-| Sodium | ✅ Fully supported — detected automatically |
-| Iris Shaders | ✅ Fully supported — shader budget applied |
-| ModMenu | ✅ Config screen shows up in mod list |
-| Cloth Config | ✅ Optional — mod works fine without it |
-| Lithium | ✅ Compatible |
-| FerriteCore | ✅ Compatible |
-| EntityCulling | ✅ Compatible |
-| Optifine | ❌ Not compatible (Optifine doesn't work with Fabric) |
-| Forge mods | ❌ Not compatible |
 
----
 
-## 📂 Project Structure (For Developers)
+Mod
+Compatible?
 
-```
+
+
+
+Sodium
+✅ Auto-detected
+
+
+Iris Shaders
+✅ Auto-budgeted
+
+
+ModMenu
+✅ Shows config screen
+
+
+Cloth Config
+✅ Optional
+
+
+Lithium
+✅ Compatible
+
+
+FerriteCore
+✅ Compatible
+
+
+EntityCulling
+✅ Compatible
+
+
+Optifine
+❌ Not compatible
+
+
+Forge mods
+❌ Not compatible
+
+
+
+
+📂 Project Structure
 src/main/java/com/thanosmod/
-├── ThanosGauntletFPS.java          # Mod startup (common/server)
-├── ThanosGauntletFPSClient.java    # Mod startup (client only)
-├── config/
-│   ├── ThanosConfig.java           # All settings in one class
-│   └── ConfigManager.java          # Reads/writes the JSON config file
-├── modules/
-│   ├── RealityStone.java           # Render distance control
-│   ├── PowerStone.java             # Entity AI throttling
-│   ├── SpaceStone.java             # Memory cleanup
-│   ├── TimeStone.java              # Redstone + particle throttling
-│   ├── MindStone.java              # Mode switching
-│   ├── SoulStone.java              # HUD overlay
-│   └── ChaosStone.java             # Debug tools + Dream Mode
-├── mixin/                          # Hooks into Minecraft's internals
-│   ├── EntityTickMixin.java        # Skips distant mob AI
-│   ├── WorldTickMixin.java         # Batch update flush
-│   ├── RedstoneMixin.java          # Skips distant redstone
-│   ├── ParticleClientMixin.java    # Particle density gate
-│   ├── ClientTickMixin.java        # Re-applies render distance
-│   ├── WorldRendererMixin.java     # Frame time debug hook
-│   ├── ServerChunkManagerMixin.java # Async lighting gate
-│   └── GameRendererMixin.java      # Render budget (future)
-├── autotune/
-│   ├── SystemDetector.java         # Reads CPU / RAM / GPU
-│   └── AutoTuner.java              # Live FPS monitor + adjuster
-├── shader/
-│   └── ShaderDetector.java         # Detects Sodium + Iris
-└── gui/
-    ├── ThanosConfigScreen.java     # In-game settings screen
-    └── ThanosModMenuIntegration.java # ModMenu integration
-```
+├── ThanosGauntletFPS.java          # Common entry
+├── ThanosGauntletFPSClient.java    # Client entry
+├── config/                         # Config + manager
+├── modules/                        # Infinity Stones
+├── mixin/                          # Minecraft hooks
+├── autotune/                        # FPS monitor & auto-tune
+├── shader/                         # Sodium/Iris detection
+└── gui/                            # ModMenu integration + screens
 
----
 
-## 📜 License
+📜 License
+MIT — free to use, modify, redistribute. Don’t claim as your own.
 
-MIT — free to use, modify, and redistribute. Just don't claim you built it yourself.
-
----
-
-*"Fine. I'll do it myself." — and then FPS went from 12 to 144.*
+"Fine. I'll do it myself." — and then FPS went from 12 to 144.
